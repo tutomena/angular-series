@@ -12,4 +12,8 @@ export class PostService {
 	  	return this.HttpClient.get("https://jsonplaceholder.typicode.com/posts");
 	}
 
+	fetchPostById(id: number){
+	  	return this.HttpClient.get("https://jsonplaceholder.typicode.com/posts/"+ id);
+	}
+
 }

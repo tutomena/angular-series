@@ -1,3 +1,10 @@
-<h2 *ngFor="let post of posts">
-  - {{post.title}}
-</h2>
+<ul>
+	<li>
+		<a routerLink="/">Home</a>
+	</li>
+	<li>
+		<a routerLink="/blog">Blog</a>
+	</li>
+</ul>
+
+<router-outlet></router-outlet>
